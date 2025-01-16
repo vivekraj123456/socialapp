@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "./UpcomingEvents.css";
 
 const UpcomingEvents = () => {
@@ -6,10 +6,11 @@ const UpcomingEvents = () => {
   const [expanded, setExpanded] = useState({});
   const [countdowns, setCountdowns] = useState({});
 
-  const events = [
+  // Memoize the events array to prevent recreation on every render
+  const events = useMemo(() => [
     { id: "coffeeMeetup", name: "Coffee Meetup", date: "2025-01-15T10:00:00", location: "Local Cafe" },
     { id: "techDiscussion", name: "Tech Discussion", date: "2025-01-18T14:00:00", location: "Virtual" }
-  ];
+  ], []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -33,7 +34,7 @@ const UpcomingEvents = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [events]); // `events` is now stable and won't trigger unnecessary re-renders
 
   const toggleExpand = (eventId) => {
     setExpanded((prev) => ({ ...prev, [eventId]: !prev[eventId] }));
