@@ -1,0 +1,55 @@
+/* Home.css */
+.Home {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.ProfileSide, .PostSide, .RightSide {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ProfileSide {
+  flex: 1;
+}
+
+.PostSide {
+  flex: 2;
+}
+
+.RightSide {
+  flex: 1;
+}
+
+.ProfileSide button, .PostSide button {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ProfileSide button:hover, .PostSide button:hover {
+  background-color: #2980b9;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.postsFeed .post {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

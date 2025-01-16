@@ -1,0 +1,116 @@
+.NearbyUsers {
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  
+  .user {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .user:last-child {
+    border-bottom: none;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:first-child {
+    background: #007bff;
+    color: white;
+  }
+  
+  button:first-child:hover {
+    background: #0056b3;
+  }
+  
+  button:last-child {
+    background: #28a745;
+    color: white;
+  }
+  
+  button:last-child:hover {
+    background: #218838;
+  }
+  
+  /* Floating Chat Window */
+  .chatWindow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 280px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .chatHeader {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .closeChat {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .chatMessages {
+    padding: 10px;
+    height: 150px;
+    overflow-y: auto;
+    background: #f9f9f9;
+  }
+  
+  .chatMessage {
+    background: #e0e0e0;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .chatInput {
+    display: flex;
+    padding: 10px;
+    background: white;
+  }
+  
+  .chatInput input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .chatInput button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  

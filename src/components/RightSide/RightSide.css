@@ -1,0 +1,49 @@
+/* src/components/RightSide/RightSide.css */
+.RightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .navIcons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navIcons .navIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navIcons .navIcon:hover {
+    color: #007bff;  /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+  }
+  
+  .navIcons > .navIcon {
+    margin: 0 1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navIcons {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navIcons > .navIcon {
+      margin: 1rem 0;
+    }
+  }
+  
+  /* For the button */
+  .r-button {
+    height: 3rem;
+    width: 80%;
+    align-self: center;
+  }
+  
+  /* Optional: style for the TrendCard, NotificationModal, NearbyUsers, UpcomingEvents */
+  
